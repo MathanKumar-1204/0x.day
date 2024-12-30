@@ -1,0 +1,485 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  color: #ffffff;
+}
+
+/* Container to Enable Scrolling */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-y: auto; /* Add vertical scrolling */
+  max-height: 100vh; /* Ensure the container does not exceed the viewport height */
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+  padding: 20px 30px;
+  background: rgba(50, 50, 90, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00ffc3;
+}
+
+.logo span {
+  color: #ae64fa;
+}
+
+.user-info {
+  font-size: 1.2rem;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+/* Logout Button */
+.logout-button {
+  align-self: flex-end; /* Aligns the button to the top right */
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.logout-button:hover {
+  background-color: #e60000;
+}
+
+/* Login Section */
+.login-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  background: rgba(50, 50, 90, 0.9);
+  color: white;
+  border-radius: 16px;
+  padding: 30px;
+  width: 100%;
+  max-width: 1200px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.login-box {
+  flex: 1;
+}
+
+.login-box h2 {
+  margin-bottom: 15px;
+  color: #ae64fa;
+}
+
+.login-box input {
+  padding: 14px;
+  width: 100%;
+  border: 1px solid #50558a;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background: #1b1b33;
+  color: white;
+}
+
+.login-box input::placeholder {
+  color: #7e88aa;
+}
+
+.login-options a {
+  text-decoration: none;
+  color: #00ffc3;
+  font-weight: bold;
+}
+
+.view-balance {
+  flex: 1;
+  text-align: center;
+}
+
+.view-balance h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #00ffc3;
+}
+
+.view-balance p {
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+
+/* Quick Pay Section */
+.quick-pay {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.quick-pay h2 {
+  margin-bottom: 20px;
+  color: #ae64fa;
+  text-align: center;
+}
+
+.quick-pay-options {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.quick-pay-options button {
+  padding: 18px 40px;
+  background: linear-gradient(to right, #ae64fa, #00ffc3);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.quick-pay-options button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Extra Options Section */
+.extra-options {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  gap: 25px;
+}
+
+.extra-options button {
+  padding: 18px 40px;
+  background: linear-gradient(to right, #00ffc3, #008080);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.extra-options button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Footer */
+.dashboard-footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 1rem;
+  color: #7e88aa;
+  opacity: 0.8;
+}
+
+.dashboard-footer p {
+  margin: 8px 0;
+}
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  color: #ffffff;
+}
+
+/* Container to Enable Scrolling */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-y: auto; /* Add vertical scrolling */
+  max-height: 100vh; /* Ensure the container does not exceed the viewport height */
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+  padding: 20px 30px;
+  background: rgba(50, 50, 90, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00ffc3;
+}
+
+.logo span {
+  color: #ae64fa;
+}
+
+.user-info {
+  font-size: 1.2rem;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+/* Logout Button */
+.logout-button {
+  align-self: flex-end; /* Aligns the button to the top right */
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.logout-button:hover {
+  background-color: #e60000;
+}
+
+/* CIBIL Score Checker Section */
+.cibil-checker {
+  flex: 1;
+  text-align: center;
+  background: rgba(50, 50, 90, 0.9);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.cibil-checker h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #ae64fa;
+}
+
+.cibil-checker button {
+  padding: 12px 30px;
+  background: linear-gradient(to right, #ae64fa, #00ffc3);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cibil-checker button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.cibil-checker p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+/* Balance Viewer Section */
+.view-balance {
+  flex: 1;
+  text-align: center;
+  background: rgba(50, 50, 90, 0.9);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.view-balance h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #00ffc3;
+}
+
+.view-balance button {
+  padding: 12px 30px;
+  background: linear-gradient(to right, #ae64fa, #00ffc3);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.view-balance button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.view-balance p {
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+
+/* Password Prompt Styling */
+.password-prompt {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(50, 50, 90, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.password-prompt h3 {
+  color: #ae64fa;
+  margin-bottom: 10px;
+}
+
+.password-prompt input {
+  padding: 14px;
+  width: 100%;
+  border: 1px solid #50558a;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background: #1b1b33;
+  color: white;
+}
+
+.password-prompt input::placeholder {
+  color: #7e88aa;
+}
+
+.password-prompt button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #00ffc3, #008080);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.password-prompt button:hover {
+  background: linear-gradient(to right, #008080, #00ffc3);
+}
+
+/* Quick Pay Section */
+.quick-pay {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.quick-pay h2 {
+  margin-bottom: 20px;
+  color: #ae64fa;
+  text-align: center;
+}
+
+.quick-pay-options {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.quick-pay-options button {
+  padding: 18px 40px;
+  background: linear-gradient(to right, #ae64fa, #00ffc3);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.quick-pay-options button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Extra Options Section */
+.extra-options {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  gap: 25px;
+}
+
+.extra-options button {
+  padding: 18px 40px;
+  background: linear-gradient(to right, #00ffc3, #008080);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.extra-options button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Footer */
+.dashboard-footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 1rem;
+  color: #7e88aa;
+  opacity: 0.8;
+}
+
+.dashboard-footer p {
+  margin: 8px 0;
+}

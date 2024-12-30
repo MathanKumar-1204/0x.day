@@ -1,0 +1,58 @@
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: rgba(50, 50, 90, 0.9);
+  color: white;
+  padding: 20px;
+  height: 100vh; /* Ensures the sidebar takes full viewport height */
+  position: fixed;
+  top: 0; /* Ensures the sidebar starts at the top */
+  left: 0; /* Fixes the sidebar to the left side */
+  overflow-y: auto; /* Enables vertical scrolling */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensures proper spacing between the elements */
+}
+
+/* Styling the scrollbar */
+.sidebar::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: rgba(50, 50, 90, 0.9); /* Track color, same as sidebar background */
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 195, 0.6); /* Thumb color (semi-transparent) */
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 195, 0.9); /* Darker thumb color when hovered */
+}
+
+/* Sidebar list styling */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1; /* Ensures that the list takes available space and allows scrolling */
+}
+
+.sidebar li {
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  display: block;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  color: #00ffc3;
+}

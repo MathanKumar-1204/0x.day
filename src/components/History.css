@@ -1,0 +1,67 @@
+/* TransactionHistoryPage.css */
+.transaction-history {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .transaction-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .transaction-card {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .transaction-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .transaction-card p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .transaction-card .status span {
+    font-weight: bold;
+  }
+  
+  .transaction-card.confirmed {
+    border-left: 6px solid green;
+  }
+  
+  .transaction-card.pending {
+    border-left: 6px solid orange;
+  }
+  
+  .transaction-card.failed {
+    border-left: 6px solid red;
+  }
+  
+  @media (max-width: 600px) {
+    .transaction-card {
+      padding: 10px;
+    }
+  
+    .transaction-card p {
+      font-size: 12px;
+    }
+  }

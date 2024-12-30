@@ -1,0 +1,120 @@
+/* General container styling */
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #007bff, #00b8d8); /* Attractive gradient background */
+  padding: 20px;
+}
+
+/* Form styling */
+.signup-container form {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+}
+
+.signup-container h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #444;
+  font-size: 14px;
+}
+
+/* Input field styling */
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color: black; /* Ensures text is visible in black */
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus state for input fields */
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none; /* Removes default outline */
+}
+
+/* Submit button styling */
+button.submit-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for submit button */
+button.submit-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Add some breathing space for responsive design */
+button.submit-button:active {
+  transform: scale(0.98); /* Click effect */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .signup-container {
+      padding: 10px;
+  }
+
+  .signup-container form {
+      padding: 20px;
+  }
+
+  .signup-container h2 {
+      font-size: 24px;
+  }
+
+  input {
+      padding: 10px;
+  }
+
+  button.submit-button {
+      font-size: 14px;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-container h2 {
+      font-size: 20px;
+  }
+
+  button.submit-button {
+      font-size: 12px;
+      padding: 8px;
+  }
+}

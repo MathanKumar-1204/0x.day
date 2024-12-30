@@ -1,0 +1,153 @@
+profile-page {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: all 0.3s;
+  }
+  p{
+    color: black;
+  }
+  .dark {
+    background-color: #333;
+    color: #f2f2f2;
+  }
+  
+  /* Header */
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Sections */
+  .profile-details, .wallet-details, .transaction-history, .actions {
+    margin-bottom: 20px;
+  }
+  
+  .user-info p, .wallet-info p {
+    margin: 5px 0;
+  }
+  
+  /* Transaction Table */
+  .transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .transaction-table th, .transaction-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .transaction-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .dark .transaction-table th {
+    background-color: #555;
+  }
+  
+  /* Action Buttons */
+  .action-buttons button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .action-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .dark .action-buttons button {
+    background-color: #ff6b6b;
+  }
+  
+  .dark .action-buttons button:hover {
+    background-color: #d14343;
+  }
+  .profile-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Make it fill the viewport height */
+    overflow: hidden; /* Prevent overflow */
+    background-color: #f9f9f9; /* Light mode background */
+  }
+  
+  .profile-page.dark {
+    background-color: #181818; /* Dark mode background */
+    color: #ffffff; /* Text color for dark mode */
+  }
+  
+  .profile-header {
+    padding: 20px;
+    background-color: #007bff; /* Header background */
+    color: white;
+    text-align: center;
+  }
+  
+  .profile-header button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #ffffff;
+    color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .profile-header button:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .scrollable-content {
+    flex: 1; /* Allow the content to expand */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px; /* Add some padding */
+  }
+  
+  section {
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transaction-history {
+    text-align: center;
+  }
+  
+  .action-buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .action-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .profile-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
+  
+  /* Footer */
+  .profile-footer {
+    text-align: center;
+    margin-top: 20px;
+  }

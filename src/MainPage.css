@@ -1,0 +1,180 @@
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px 30px;
+    background: rgba(50, 50, 90, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00ffc3;
+  }
+  
+  .logo span {
+    color: #ae64fa;
+  }
+  
+  .user-info {
+    font-size: 1.2rem;
+    color: #ffffff;
+    opacity: 0.8;
+  }
+  
+  /* Login Section */
+  .login-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    background: rgba(50, 50, 90, 0.9);
+    color: white;
+    border-radius: 16px;
+    padding: 30px;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  }
+  
+  .login-box {
+    flex: 1;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 15px;
+    color: #ae64fa;
+  }
+  
+  .login-box input {
+    padding: 14px;
+    width: 100%;
+    border: 1px solid #50558a;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background: #1b1b33;
+    color: white;
+  }
+  
+  .login-box input::placeholder {
+    color: #7e88aa;
+  }
+  
+  .login-options a {
+    text-decoration: none;
+    color: #00ffc3;
+    font-weight: bold;
+  }
+  
+  .view-balance {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .view-balance h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #00ffc3;
+  }
+  
+  .view-balance p {
+    font-size: 1.2rem;
+    opacity: 0.7;
+  }
+  
+  /* Quick Pay Section */
+  .quick-pay {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .quick-pay h2 {
+    margin-bottom: 20px;
+    color: #ae64fa;
+    text-align: center;
+  }
+  
+  .quick-pay-options {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .quick-pay-options button {
+    padding: 18px 40px;
+    background: linear-gradient(to right, #ae64fa, #00ffc3);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .quick-pay-options button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Extra Options Section */
+  .extra-options {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    gap: 25px;
+  }
+  
+  .extra-options button {
+    padding: 18px 40px;
+    background: linear-gradient(to right, #00ffc3, #008080);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .extra-options button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Footer */
+  .dashboard-footer {
+    margin-top: auto;
+    text-align: center;
+    font-size: 1rem;
+    color: #7e88aa;
+    opacity: 0.8;
+  }
+  
+  .dashboard-footer p {
+    margin: 8px 0;
+  }

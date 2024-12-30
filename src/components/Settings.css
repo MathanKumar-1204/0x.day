@@ -1,0 +1,119 @@
+/* General Styles */
+.settings-page {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: all 0.3s;
+  }
+  
+  .settings-page.dark {
+    background-color: #333;
+    color: #f9f9f9;
+  }
+  
+  /* Header */
+  .settings-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .settings-header h1 {
+    font-size: 26px;
+  }
+  
+  /* Sections */
+  .settings-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .settings-page.dark .settings-section {
+    background-color: #444;
+    border-color: #555;
+  }
+  
+  .settings-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Items */
+  .settings-item {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .settings-item label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .settings-item input, .settings-item select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+  }
+  
+  .settings-page.dark .settings-item input, 
+  .settings-page.dark .settings-item select {
+    background-color: #555;
+    border-color: #777;
+    color: #f9f9f9;
+  }
+  
+  .settings-item button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .settings-item button:hover {
+    background-color: #0056b3;
+  }
+  
+  .settings-page.dark .settings-item button {
+    background-color: #ff6b6b;
+  }
+  
+  .settings-page.dark .settings-item button:hover {
+    background-color: #d14343;
+  }
+  
+  /* Footer */
+  .settings-footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .settings-footer button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .settings-footer button:hover {
+    background-color: #218838;
+  }
+  
+  .settings-page.dark .settings-footer button {
+    background-color: #5cb85c;
+  }
+  
+  .settings-page.dark .settings-footer button:hover {
+    background-color: #4cae4c;
+  }

@@ -1,0 +1,129 @@
+/* LoanPage.css */
+.loan-page {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loan-header {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .loan-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .loan-form input,
+  .loan-form textarea,
+  .loan-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .loan-form textarea {
+    resize: vertical;
+  }
+  
+  .loan-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .loan-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .loan-summary {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #eef5ff;
+    border-radius: 8px;
+    border: 1px solid #d1e7ff;
+  }
+  
+  .loan-summary h2 {
+    margin-bottom: 15px;
+    color: #003d8f;
+  }
+  
+  .loan-summary p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .loan-summary p strong {
+    color: #007bff;
+  }.loan-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .loan-form, .loan-summary {
+    width: 100%;
+    max-width: 600px; /* Adjust the max width as per your design */
+    margin-bottom: 20px;
+    background-color: #fff; /* Optional: To give a distinct background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: For better UI */
+  }
+  
+  .loan-header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  .loan-summary p {
+    margin: 5px 0;
+  }
+  
